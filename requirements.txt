@@ -1,0 +1,16 @@
+python-duckdb
+pandas
+numpy
+scikit-learn=1.0.2
+imbalanced-learn
+matplotlib
+seaborn
+joblib
+scipy
+statsmodels
+optuna
+lightgbm
+catboost
+xgboost
+shap
+

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="header">
+    <h1>Stroke API</h1>
+</div>
+
+<div class='form-body'>
+    <form action="/" method="POST">
+        <ul>
+        <li class='form-item'>
+            <label for="gender">Gender</label>
+            <select id="gender" name='gender'>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </li>
+        <li class="form-item">
+            <label for="age">Age</label>
+            <input type="number" min='0' name='age' required>
+        </li>
+        <li>
+            <label for="hypertension">Do you have Hypertension?</label>
+            <select id="hypertension" name='hypertension'>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+        </li>
+        <li class="form-item">
+            <label for="heart_disease">Do you have a Heart disease?</label>
+            <select id="heart_disease" name='heart_disease'>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+        </li>
+        <li class="form-item">
+            <label for="ever_married">Are you Married?</label>
+            <select id="ever_married" name='ever_married'>
+                <option value=No>No</option>
+                <option value=Yes>Yes</option>
+            </select>
+        </li>
+        <li class="form-item">
+            <label for="work_type">How are you Employed?</label>
+            <select id="work_type" name='work_type'>
+                <option value="Private">Privately employed</option>
+                <option value="Self-employed">Self-employed</option>
+                <option value="children"> I am a child</option>
+                <option value="Govt_job">Government job</option>
+                <option value="Never_worked">Never worked</option>
+            </select>
+        </li>
+        <li class="form-item">
+            <label for="Residence_type">Do you live in the countryside?</label>
+            <select id="Residence_type" name='Residence_type'>
+                <option value="Urban">No</option>
+                <option value="Rural">Yes</option>
+            </select>
+        </li>
+        <li class='form-item'>
+            <label for="avg_glucose_level">Glucose level</label>
+            <input type="number" step="0.01" min='0' name='avg_glucose_level' required>
+        </li>
+        <li class="form-item">
+            <label for="bmi">BMI</label>
+            <input type="number" step="0.1" min='0' name='bmi' required>
+        </li>
+        <li class='form-item'>
+            <label for="smoking_status">What is your Smoking status?</label>
+            <select id="smoking_status" name='smoking_status'>
+                <option value="never smoked"> Never smoked</option>
+                <option value="smokes">Smoke</option>
+                <option value="formerly smoked">Smoked in the past</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+        </li>
+        <li class="but">
+            <button type="submit", class="btn btn-dark" value="Predict Stroke Probability">Predict Stroke Probability</button>
+        </li>
+        </ul>
+    </form>
+</div>
+{% endblock %}
+
