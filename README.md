@@ -20,5 +20,6 @@ To run the project yourself download the dataset, install dependencies from requ
 To try out the api first run the `stroke.ipynb` to create the models used in it, then go to `src` directory and run the api using:
 
 ```bash
+$ chmod u+x app.py
 $ ./app.py
 ```
